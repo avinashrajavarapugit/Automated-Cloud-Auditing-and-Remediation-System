@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>AWS CLoud Auditing and Remediation System</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class = "header">
+            <h1>AWS Cloud Auditing and Remediation System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Report">Reports</a></li>
+                <li><a href="/About">About</a></li>
+            </ul>
+        </nav>
+        <div class = "content">
+            <h3>Enter your AWS Credentials</h3>
+            <form action="/login" method="post">
+                <label for="keyid">AWS Access key ID:</label>
+                <input type="text" id="keyid" required>
+                <label for="secretkey">AWS Secret access key:</label>
+                <input type="text" id="secretkey" required>
+                <button type="submit">Start Auditing</button>
+            </form>
+        </div>
+    </body>
+</html>
