@@ -18,9 +18,9 @@ app.config.update(SESSION_COOKIE_SAMESITE="Lax", SESSION_COOKIE_SECURE=False)
 Session(app)
 CORS(app, supports_credentials=True)
 
-app.api_key = 'AKIAQXUIXLDBVJGQ3GGY'
-app.secret_key = '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'
-AWS_REGION = 'us-east-1'
+app.api_key = ''
+app.secret_key = ''
+AWS_REGION = ''
 
 
 @app.route('/authenticate', methods=['POST'])
